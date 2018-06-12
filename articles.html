@@ -1,34 +1,60 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<link rel="icon" href="favicon.ico">
-<title>Braden H. Bax - Home</title>
+<title>Login</title>
+<meta charset="UTF-8">
+
+
+
+
+
+<script type="text/javascript">
+// PASSWORD PROTECTION SCRIPT
+
+function TheLogin() {
+
+var password = 'Thelab01';
+
+if (this.document.login.pass.value == password) {
+  window.location.href="articles/articleshome.html";
+}
+else {
+  window.alert("Incorrect password, please try again.");
+  }
+}
+
+</script>
+
+
+
+
+
 </head>
 
 <body>
-<div id="container">
-		<div id="mainpic">
-        	<h1><span class="lightblue"></span></h1>
-            <h2></h2>
-        </div>   
-        
-        <div align="center" id="menu">
-        	<ul>
-            	<li class="menuitem"><a href="index.html">Home</a></li>
-                <li class="menuitem"><a href="articles.html">Help Articles</a></li>
-				<li class="menuitem"><a href="contact.html">Contact</a></li>
 
-            </ul>
-        </div>
-        
-		<div id="content">
-        	<p>testing</p>
+<br><br><br><br>
 
-            
-            <div id="footer"><h3><a href="">&copy 2018 Braden Bax</a></h3></div>
-      </div>
-   </div>
+
+
+
+
+<div style="text-align: center; margin: 0 auto; color: #0000FF; font: normal 13px arial, sans-serif;">
+Enter Password:<br>
+<form name="login" style="margin: 5px 0px 0px 0px;">
+<input type="text" name="pass" size="17" onkeydown="if(event.keyCode==13) return false;" style="width: 130px;"><br>
+<input type="button" value="Click to Login" style="width: 134px; margin: 4px auto 4px auto;" onclick="javascript:TheLogin(this.form)">
+</form>
+
+
+
+</div>
+
+
+
+
+
+<br><br><br>
+
 </body>
 </html>

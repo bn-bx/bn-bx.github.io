@@ -1,4 +1,9 @@
+@font-face {
+font-family: "Futura";
+src: url("fonts/FuturaFuturisC.otf");
+ 
 
+}
 
 
 
@@ -73,8 +78,13 @@ width:940px;
 height:69px;
 float:left;
 clear:both;
-}
+font-family:Futura;
 
+}
+.menuitem {
+font-size: 22px;	
+	
+}
 #content
 {
 width:880px;
@@ -108,6 +118,7 @@ color:#7198E1;
 	padding-right: 0px;
 	margin-left:auto;
 	width:900px;
+	font-size:22px;
 }
 
 #menu li {
@@ -115,6 +126,7 @@ color:#7198E1;
 	padding-left: 0px;
 	padding-right: 0px;
 	display: inline; 
+	font-size: 40px;
 	
 }
 
@@ -139,11 +151,14 @@ color:#7198E1;
 	background: url(images/menuhov.jpg) no-repeat;
 }
 
-#content p
-{
-	
+#content p {
+font-size: 22px;
+font-family: Futura;	
 }
-
+#content h1 {
+font-size: 38px;
+font-family: Futura;	
+}
 
 html, body {
 text-align: center;
