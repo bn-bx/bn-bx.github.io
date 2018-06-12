@@ -1,5 +1,0 @@
- AuthUserFile /.htpasswd
-
-AuthName articles.html
-AuthType Basic
-require valid-user
