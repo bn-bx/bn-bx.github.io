@@ -1,5 +1,5 @@
  AuthUserFile /.htpasswd
-AuthGroupFile /dev/null
-AuthName Articles
+
+AuthName articles.html
 AuthType Basic
 require valid-user
