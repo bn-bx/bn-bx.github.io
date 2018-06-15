@@ -155,8 +155,16 @@ color:#7198E1;
 font-size: 22px;
 font-family: Futura;	
 }
+#content p2 {
+font-size: 12px;
+font-family: Futura;	
+}
 #content h1 {
 font-size: 38px;
+font-family: Futura;	
+}
+#content h2 {
+font-size: 32px;
 font-family: Futura;	
 }
 
