@@ -6,7 +6,6 @@ src: url("fonts/FuturaFuturisC.otf");
 }
 
 
-
 body {
 	margin: 0;
 	padding: 0;
@@ -153,11 +152,20 @@ color:#7198E1;
 
 #content p {
 font-size: 22px;
-font-family: Futura;	
+font-family: Futura;
+padding-bottom: 10px;
+padding-top: 10px;	
 }
 #content p2 {
 font-size: 12px;
-font-family: Futura;	
+font-family: Futura;
+	
+}
+#content p3 {
+font-size: 12px;
+font-family: Futura;
+padding: 20px;
+
 }
 #content h1 {
 font-size: 38px;
@@ -167,7 +175,12 @@ font-family: Futura;
 font-size: 18px;
 font-family: Futura;	
 }
+#content img {
+max-width: 50%;
+padding-bottom: 10px;
+padding-top: 10px;
 
+}
 html, body {
 text-align: center;
 }
