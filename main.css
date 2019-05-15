@@ -61,3 +61,6 @@ color: white;
   display: table;
   clear: both;
 }
+.padding  {
+	padding-bottom: 25px;
+}
