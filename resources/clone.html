@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Braden Bax - Resources</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<div class="header">
+Braden Bax
+</div>
+<div class="row">
+<div class="column1">
+<a href="index.html"><p class="padding">Home</p></a>
+
+<a href="contact.html"><p class="padding">Contact</p></a>
+
+<a href="resources.html"><p class="padding">Resources</p></a>
+<a href="downloads.html"><p class="padding">Downloads</p></a>
+
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+</div>
+<div class="column2">
+<h1>Resources</h1>
+<hr>
+<h2>Windows Will Not Boot After Cloning to New HDD or SSD?</h2>
+<ol>
+<li><p>Boot into Windows Recovery Enviroment via USB or CD.</p></li>
+<li><p>Once there, choose the following options; Repair your Computer > Troubleshoot > Advanced > Command Prompt</p></li>
+<li><p>Type the following command: diskpart</p></li>
+<li><p>Type the following command: list disk</p></li>
+<li><p>Type the following command: sel disk # (replace # with the number of the disk that has Windows on it.)</p></li>
+<li><p>Type the following command: list vol</p></li>
+<li><p></p>Type the following command: sel vol # (replace # with the EFI volume, usually a couple hundred mb in size.)</li>
+<li><p>Type the following command: set id=c12a7328-f81f-11d2-ba4b-00a0c89ec89b</p></li>
+<li><p>Type the following command: assign letter=A:</p></li>
+<li><p>Type the following command: exit<p></li>
+<li><p>Now that you have exited Diskpart type the following command: bcdboot C:\Windows /l en-us /s A: /f ALL (keep a eye on the first part of the command that includes drive letter C, sometimes in the RE the normal C drive can be mounted as D or something else double check this by listing volumes in diskpart otherwise the command may not be successful)</p></li>
+<li><p>Exit and reboot, you are finished!</p></li>
+</ol>
+<hr>
+</div>
+</div>
+<div class="footer">
+<p class="footertext">Braden Bax (c) 2019</p>
+</div>
+</body>
+</html>
