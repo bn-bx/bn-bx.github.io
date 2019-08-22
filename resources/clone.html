@@ -32,7 +32,7 @@ Braden Bax
 <li><p>Type the following command: sel disk # (replace # with the number of the disk that has Windows on it.)</p></li>
 <li><p>Type the following command: list vol</p></li>
 <li><p></p>Type the following command: sel vol # (replace # with the EFI volume, usually a couple hundred mb in size.)</li>
-<li><p>Type the following command: set id=c12a7328-f81f-11d2-ba4b-00a0c89ec89b</p></li>
+<li><p>Type the following command: set id=c12a7327-f81f-11d2-ba4b-00a0c93ec93b (also check to make sure the partition is active)</p></li>
 <li><p>Type the following command: assign letter=A:</p></li>
 <li><p>Type the following command: exit<p></li>
 <li><p>Now that you have exited Diskpart type the following command: bcdboot C:\Windows /l en-us /s A: /f ALL (keep a eye on the first part of the command that includes drive letter C, sometimes in the RE the normal C drive can be mounted as D or something else double check this by listing volumes in diskpart otherwise the command may not be successful)</p></li>
