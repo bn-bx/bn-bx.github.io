@@ -35,9 +35,10 @@ color: white;
   background: #b3b6d3;
   color: white;
   font-size: 30px;
-    background: url(bkg.jpg);
+   /* background: url(bkg.jpg);
   background-repeat: repeat;
-  background-size: 600px 600px;
+  background-size: 600px 600px; */
+  background: black;
 }
 .column1 {
   float: left;
